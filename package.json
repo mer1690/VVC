@@ -1,0 +1,14 @@
+{
+  "name": "valley-view-chalet",
+  "private": true,
+  "type": "module",
+  "description": "Direct-booking website for Valley View Chalet, Lexington NY",
+  "scripts": {
+    "test": "node tests/run.mjs",
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  },
+  "engines": { "node": ">=20" }
+}

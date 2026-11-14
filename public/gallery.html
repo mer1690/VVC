@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery · Valley View Chalet</title>
+<meta name="description" content="Photos of Valley View Chalet in Lexington, NY — room by room, inside and out, across every Catskills season.">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="/">Valley View Chalet</a>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <a href="/">The Chalet</a>
+    <a href="/gallery.html" aria-current="page">Gallery</a>
+    <a href="/reviews.html">Reviews</a>
+    <a href="/events.html">Events</a>
+    <a href="/guide.html">Guide</a>
+  </nav>
+  <a class="btn btn--shadow" href="/book.html">Reserve</a>
+  <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 1h18M0 6h18M0 11h18"/></svg></button>
+</header>
+
+<main data-gallery>
+  <section class="page-hero">
+    <img src="/assets/img/great-room.webp" alt="Great room with vaulted cedar ceiling, antler chandelier and stone fireplace">
+    <div class="page-hero__inner">
+      <p class="eyebrow">Gallery</p>
+      <h1>Inside &amp; <em>out</em></h1>
+    </div>
+  </section>
+
+  <section class="filterbar">
+    <div class="wrap">
+      <div class="filterbar__top">
+        <div class="chips" data-gallery-tabs role="group" aria-label="Filter photos"></div>
+        <span class="muted" style="font-size: 13px;" data-gallery-count aria-live="polite"></span>
+      </div>
+      <div class="subchips filterbar__rooms" data-gallery-rooms role="group" aria-label="Filter by room" hidden></div>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-bottom: 120px;" data-gallery-body></section>
+
+  <section class="cta">
+    <h2>See it in person.</h2>
+    <a class="btn" href="/book.html">Check availability</a>
+  </section>
+</main>
+
+<div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox__btn lightbox__close" type="button" aria-label="Close">×</button>
+  <button class="lightbox__btn lightbox__prev" type="button" aria-label="Previous photo">‹</button>
+  <img src="" alt="">
+  <button class="lightbox__btn lightbox__next" type="button" aria-label="Next photo">›</button>
+  <p class="lightbox__cap"></p>
+</div>
+
+<footer class="site-footer">
+  <span class="logo">Valley View</span>
+  <span>Lexington, New York · Superhosts · 12 years of hosting · <a href="/returning.html">Returning guests</a></span>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book your stay · Valley View Chalet</title>
+<meta name="description" content="Reserve Valley View Chalet directly with your hosts — no platform fees. Sleeps 10 in Lexington, NY.">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="/">Valley View Chalet</a>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <a href="/">The Chalet</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/reviews.html">Reviews</a>
+    <a href="/events.html">Events</a>
+    <a href="/guide.html">Guide</a>
+  </nav>
+  <a class="btn btn--shadow" href="/book.html">Reserve</a>
+  <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 1h18M0 6h18M0 11h18"/></svg></button>
+</header>
+
+<main>
+  <section class="page-hero page-hero--short">
+    <img src="/assets/img/hottub-fall.webp" alt="Fall foliage and the valley at dusk beside the hot tub">
+    <div class="page-hero__inner" style="padding-bottom: 52px;">
+      <p class="eyebrow">Reserve direct · no platform fees</p>
+      <h1 style="font-size: clamp(44px, 5.4vw, 68px);">Book your stay</h1>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-top: 64px; padding-bottom: 96px;">
+    <div class="book-layout">
+      <div class="book-main">
+        <p class="brass" style="font-size: 14px;" data-stay-summary></p>
+
+        <!--
+          BOOKING WIDGET
+          Paste the embed code from your booking software (e.g., OwnerRez, Lodgify or Hospitable)
+          inside the <div id="booking-widget"> below, replacing the fallback content.
+          Most tools let you set fonts/colors — use #121512 (background), #E9E4DA (text), #D4B47A (accent).
+        -->
+        <div class="widget-slot" id="booking-widget">
+          <div class="stack" style="gap: 28px;">
+            <div class="split" style="gap: 32px; align-items: start;">
+              <div data-calendar data-months="1"></div>
+              <div class="stack" style="gap: 16px;">
+                <h2 style="font-size: 34px;">Online booking opens soon</h2>
+                <p class="card__text">Pick your dates on the calendar, then send us a note below. We'll confirm availability and the total within the hour, and send a secure payment link.</p>
+                <dl class="facts" style="margin: 0;">
+                  <div><dt>3+ nights</dt><dd class="brass">Discounted</dd></div>
+                  <div><dt>Platform fee</dt><dd class="brass">$0 · booking direct</dd></div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="widget-slot" style="min-height: 0; margin-top: 24px;" id="contact">
+          <form class="form" id="inquiry-form" name="stay-inquiry" method="POST" data-netlify="true" netlify-honeypot="company" data-netlify-ajax data-booking-bar>
+            <input type="hidden" name="form-name" value="stay-inquiry">
+            <p class="sr-only"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+            <h2 style="font-size: 30px;">Ask about your dates</h2>
+            <div class="form-grid form-grid--3">
+              <label class="input">Arrive<input type="date" name="arrive" required></label>
+              <label class="input">Depart<input type="date" name="depart" required></label>
+              <label class="input">Guests<input type="text" name="guests" placeholder="e.g. 6 adults, 2 children"></label>
+            </div>
+            <div class="form-grid">
+              <label class="input">Name<input type="text" name="name" autocomplete="name" required></label>
+              <label class="input">Email<input type="email" name="email" autocomplete="email" required></label>
+            </div>
+            <label class="input">Anything we should know?<textarea name="message" rows="4"></textarea></label>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px;">
+              <p class="form-msg" role="status"></p>
+              <button class="btn" type="submit">Send inquiry</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <aside class="book-side">
+        <div style="background: var(--panel); border: 1px solid var(--line);">
+          <div class="frame" style="height: 220px;"><img src="/assets/img/hero-winter-sunset.webp" alt="Snowy deck with hot tub and firepit at winter sunset" loading="lazy"></div>
+          <div class="stack" style="padding: 28px; gap: 14px;">
+            <span class="serif" style="font-size: 28px;">Valley View Chalet</span>
+            <span class="muted" style="font-size: 14px;">Lexington, NY · 10 guests · 3 bedrooms · 3 baths</span>
+            <span class="brass" style="font-size: 14px;">4.99 ★ · 177 reviews · Guest Favorite</span>
+          </div>
+        </div>
+        <dl class="facts" style="margin: 0;">
+          <div><dt>Check-in / out</dt><dd>4:00 pm / 11:00 am</dd></div>
+          <div><dt>Pets</dt><dd>Welcome · $50/stay</dd></div>
+          <div><dt>Winter access</dt><dd>AWD / 4WD suggested</dd></div>
+        </dl>
+        <p class="card__text" style="font-size: 14px;">Questions before you book? Malcolm and Jess usually reply within an hour. <a class="brass" href="#contact">Send us a note</a></p>
+        <a href="/returning.html" style="display: block; text-decoration: none; border: 1px solid var(--line); padding: 20px 22px; font-size: 14px;"><span class="card__tag" style="display: block; margin-bottom: 6px;">Stayed with us before?</span>Enter your returning-guest code →</a>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span class="logo">Valley View</span>
+  <span>Lexington, New York · Superhosts · 12 years of hosting · <a href="/returning.html">Returning guests</a></span>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

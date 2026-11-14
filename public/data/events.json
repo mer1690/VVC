@@ -1,0 +1,24 @@
+{
+  "_howto": "Hand-picked events. Each needs title and start (YYYY-MM-DD). Optional: end, time, town, minutes (drive time), category (Ski, Community, Markets, Music, Theater, Family, Outdoors), note, source, url. Events imported automatically are merged in from /api/events after you approve them at /admin/events.",
+  "events": [
+    {
+      "title": "The 2026 Windham Manor Holiday Market",
+      "start": "2026-11-28",
+      "end": "2026-11-29",
+      "town": "Windham",
+      "minutes": 20,
+      "category": "Markets",
+      "source": "Windham Mountain",
+      "url": "https://www.windhammountain.com/visit/events/"
+    },
+    {
+      "title": "Windham's Holiday Tree Lighting & Parade of Lights",
+      "start": "2026-12-05",
+      "town": "Windham",
+      "minutes": 20,
+      "category": "Community",
+      "source": "Windham Mountain",
+      "url": "https://www.windhammountain.com/visit/events/"
+    }
+  ]
+}

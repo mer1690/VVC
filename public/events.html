@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Events near Valley View Chalet · Windham, Hunter, Lexington & the northern Catskills</title>
+<meta name="description" content="Upcoming events within a short drive of Valley View Chalet — ski mountains, markets, music and theater in Windham, Hunter, Lexington, Tannersville, Prattsville and Stamford.">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="/">Valley View Chalet</a>
+  <nav class="site-nav" id="site-nav" aria-label="Main">
+    <a href="/">The Chalet</a>
+    <a href="/gallery.html">Gallery</a>
+    <a href="/reviews.html">Reviews</a>
+    <a href="/events.html" aria-current="page">Events</a>
+    <a href="/guide.html">Guide</a>
+  </nav>
+  <a class="btn btn--shadow" href="/book.html">Reserve</a>
+  <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 18 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M0 1h18M0 6h18M0 11h18"/></svg></button>
+</header>
+
+<main data-events-page>
+  <section class="page-hero">
+    <img src="/assets/img/firepit-snow.webp" alt="Firepit burning on the deck in the snow at blue hour">
+    <div class="page-hero__inner">
+      <p class="eyebrow">Events</p>
+      <h1>The season <em>ahead</em></h1>
+    </div>
+  </section>
+
+  <section class="wrap" style="padding-top: 72px; padding-bottom: 120px;">
+    <div class="events-layout">
+      <aside class="events-side">
+        <div data-calendar data-event-markers></div>
+        <div class="chips" data-event-cats role="group" aria-label="Filter by category"></div>
+        <p class="muted" style="font-size: 13px; line-height: 1.7; color: var(--faint);">Tap a date to see what's on that day. Planning around an event? <a class="brass" href="/book.html">Check the chalet's availability</a>.</p>
+      </aside>
+
+      <div class="events-main" data-events-list aria-live="polite">
+        <p class="empty-note">Loading events…</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <span class="logo">Valley View</span>
+  <span>Lexington, New York · Superhosts · 12 years of hosting · <a href="/returning.html">Returning guests</a></span>
+</footer>
+
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

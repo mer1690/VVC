@@ -1,0 +1,52 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Security headers for every page
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    X-Frame-Options = "SAMEORIGIN"
+
+# Photos and styles rarely change — cache them for a week
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/returning.html"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+
+# Short, friendly URLs
+[[redirects]]
+  from = "/gallery"
+  to = "/gallery.html"
+  status = 301
+[[redirects]]
+  from = "/reviews"
+  to = "/reviews.html"
+  status = 301
+[[redirects]]
+  from = "/events"
+  to = "/events.html"
+  status = 301
+[[redirects]]
+  from = "/guide"
+  to = "/guide.html"
+  status = 301
+[[redirects]]
+  from = "/book"
+  to = "/book.html"
+  status = 301
+[[redirects]]
+  from = "/welcome-back"
+  to = "/returning.html"
+  status = 301
